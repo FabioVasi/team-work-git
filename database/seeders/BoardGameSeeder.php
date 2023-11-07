@@ -16,33 +16,31 @@ class BoardGameSeeder extends Seeder
         $boardgames = [
             [
                 "name" => "Monopoli",
-                "price" => "$29.99",
-                "genre" => "ruolo"
+                "price" => "$29.99"
             ],
             [
                 "name" => "Bang",
-                "price" => "$19.99",
-                "genre" => "strategia"
-
+                "price" => "$19.99"
             ],
             [
                 "name" => "Chess",
-                "price" => "$49.99",
-                "genre" => "carte"
-
+                "price" => "$49.99"
             ],
             [
                 "name" => "Trivia",
-                "price" => "$59.99",
-                "genre" => "guerra"
-
+                "price" => "$59.99"
             ]
         ];
 
-        foreach($boardgames as $boardgame) {
+        foreach ($boardgames as $boardgame) {
             $newBoardGame = new BoardGame();
             $newBoardGame->name = $boardgame['name'];
             $newBoardGame->price = $boardgame['price'];
+<<<<<<< HEAD
+            $newBoardGame->creator = $boardgame['creator'];
+=======
+            $newBoardGame->description = $boardgame['description'];
+>>>>>>> a8f4599b075790da1895d276d9af95ec1b30048d
             $newBoardGame->save();
         }
     }
