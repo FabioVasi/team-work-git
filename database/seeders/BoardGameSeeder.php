@@ -16,19 +16,23 @@ class BoardGameSeeder extends Seeder
         $boardgames = [
             [
                 "name" => "Monopoli",
-                "price" => "$29.99"
+                "price" => "$29.99",
+                "image" => "https://picsum.photos/200/300"
             ],
             [
                 "name" => "Bang",
-                "price" => "$19.99"
+                "price" => "$19.99",
+                "image" => "https://picsum.photos/200/300"
             ],
             [
                 "name" => "Chess",
-                "price" => "$49.99"
+                "price" => "$49.99",
+                "image" => "https://picsum.photos/200/300",
             ],
             [
                 "name" => "Trivia",
-                "price" => "$59.99"
+                "price" => "$59.99",
+                "image" => "https://picsum.photos/200/300",
             ]
         ];
 
@@ -36,6 +40,8 @@ class BoardGameSeeder extends Seeder
             $newBoardGame = new BoardGame();
             $newBoardGame->name = $boardgame['name'];
             $newBoardGame->price = $boardgame['price'];
+            $newBoardGame->image = $boardgame['image'];
+
             $newBoardGame->save();
         }
     }
