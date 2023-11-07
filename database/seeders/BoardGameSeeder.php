@@ -16,19 +16,26 @@ class BoardGameSeeder extends Seeder
         $boardgames = [
             [
                 "name" => "Monopoli",
-                "price" => "$29.99"
+                "price" => "$29.99",
+                "genre" => "ruolo"
             ],
             [
                 "name" => "Bang",
-                "price" => "$19.99"
+                "price" => "$19.99",
+                "genre" => "strategia"
+
             ],
             [
                 "name" => "Chess",
-                "price" => "$49.99"
+                "price" => "$49.99",
+                "genre" => "carte"
+
             ],
             [
                 "name" => "Trivia",
-                "price" => "$59.99"
+                "price" => "$59.99",
+                "genre" => "guerra"
+
             ]
         ];
 
