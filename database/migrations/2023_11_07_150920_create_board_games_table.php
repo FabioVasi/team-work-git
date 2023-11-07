@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('board_games', function (Blueprint $table) {
             $table->id();
-            $table->name();
-            $table->price();
+            $table->text('name');
+            $table->string('price');
             $table->timestamps();
         });
     }
