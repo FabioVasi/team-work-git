@@ -36,11 +36,16 @@ class BoardGameSeeder extends Seeder
             ]
         ];
 
-        foreach($boardgames as $boardgame) {
+        foreach ($boardgames as $boardgame) {
             $newBoardGame = new BoardGame();
             $newBoardGame->name = $boardgame['name'];
             $newBoardGame->price = $boardgame['price'];
             $newBoardGame->image = $boardgame['image'];
+
+
+            $newBoardGame->creator = $boardgame['creator'];
+
+            $newBoardGame->description = $boardgame['description'];
 
             $newBoardGame->save();
         }
