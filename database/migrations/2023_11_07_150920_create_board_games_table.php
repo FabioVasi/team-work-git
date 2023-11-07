@@ -15,7 +15,11 @@ return new class extends Migration
             $table->id();
             $table->text('name');
             $table->string('price');
+<<<<<<< HEAD
             $table->string('creator');
+=======
+            $table->text('description');
+>>>>>>> a8f4599b075790da1895d276d9af95ec1b30048d
             $table->timestamps();
         });
     }
