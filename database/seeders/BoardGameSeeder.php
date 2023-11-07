@@ -16,19 +16,23 @@ class BoardGameSeeder extends Seeder
         $boardgames = [
             [
                 "name" => "Monopoli",
-                "price" => "$29.99"
+                "price" => "$29.99",
+                "description" => "wasd"
             ],
             [
                 "name" => "Bang",
-                "price" => "$19.99"
+                "price" => "$19.99",
+                "description" => "wasd"
             ],
             [
                 "name" => "Chess",
-                "price" => "$49.99"
+                "price" => "$49.99",
+                "description" => "wasd"
             ],
             [
                 "name" => "Trivia",
-                "price" => "$59.99"
+                "price" => "$59.99",
+                "description" => "wasd"
             ]
         ];
 
@@ -36,6 +40,7 @@ class BoardGameSeeder extends Seeder
             $newBoardGame = new BoardGame();
             $newBoardGame->name = $boardgame['name'];
             $newBoardGame->price = $boardgame['price'];
+            $newBoardGame->description = $boardgame['description'];
             $newBoardGame->save();
         }
     }
